@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/nav" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="口腔在线"
+            android:textColor="#FFFFFF"
+            android:textSize="22dip"
+             />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/Home_ListView"
+        android:layout_width="fill_parent"
+        android:layout_height="281dp"
+        android:layout_weight="1.07"
+        android:background="@android:color/white"
+        android:cacheColorHint="#00000000" >
+    </ListView>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/black">
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:scrollbars="none"
+         android:cacheColorHint="#00000000"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:orientation="horizontal" >
+            <RadioGroup
+            android:id="@+id/Home_RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:gravity="center"
+            >
+   
+            <RadioButton
+               android:id="@+id/Home_Protect"  
+               android:layout_width="wrap_content"  
+               android:layout_height="wrap_content"             
+               android:background="@drawable/radio"  
+               android:button="@null"  
+               android:checked="true"  
+               android:gravity="center"  
+               android:text="@string/Home_protect"
+               android:textColor="#FFFFFF"
+               android:textStyle="bold"/>
+            <RadioButton
+               android:id="@+id/Home_Cycle"  
+               android:layout_width="wrap_content"  
+               android:layout_height="wrap_content"             
+               android:background="@drawable/radio"  
+               android:button="@null"  
+               android:checked="true"  
+               android:gravity="center"  
+               android:text="@string/Home_cycle"
+               android:textColor="#FFFFFF"
+               android:textStyle="bold"/>
+            <RadioButton
+               android:id="@+id/Home_Positive"  
+               android:layout_width="wrap_content"  
+               android:layout_height="wrap_content"             
+               android:background="@drawable/radio"  
+               android:button="@null"  
+               android:checked="true"  
+               android:gravity="center"  
+               android:text="@string/Home_Positive"
+               android:textColor="#FFFFFF"
+               android:textStyle="bold"/>
+            <RadioButton
+               android:id="@+id/Home_Repair"  
+               android:layout_width="wrap_content"  
+               android:layout_height="wrap_content"             
+               android:background="@drawable/radio"  
+               android:button="@null"  
+               android:checked="true"  
+               android:gravity="center"  
+               android:text="@string/Home_Repair"
+               android:textColor="#FFFFFF"
+               android:textStyle="bold"/>
+            <RadioButton
+               android:id="@+id/Home_Child"  
+               android:layout_width="wrap_content"  
+               android:layout_height="wrap_content"             
+               android:background="@drawable/radio"  
+               android:button="@null"  
+               android:checked="true"  
+               android:gravity="center"  
+               android:text="@string/Home_Child"
+               android:textColor="#FFFFFF"
+               android:textStyle="bold"/>
+            <RadioButton
+               android:id="@+id/Home_Tooth"  
+               android:layout_width="wrap_content"  
+               android:layout_height="wrap_content"             
+               android:background="@drawable/radio"  
+               android:button="@null"  
+               android:checked="true"  
+               android:gravity="center"  
+               android:text="@string/Home_Tooth"
+               android:textColor="#FFFFFF"
+               android:textStyle="bold"/>
+            <RadioButton
+               android:id="@+id/Home_Surgical"  
+               android:layout_width="wrap_content"  
+               android:layout_height="wrap_content"             
+               android:background="@drawable/radio"  
+               android:button="@null"  
+               android:checked="true"  
+               android:gravity="center"  
+               android:text="@string/Home_Surgical"
+               android:textColor="#FFFFFF"
+               android:textStyle="bold"/>
+            <RadioButton
+               android:id="@+id/Home_Crop"  
+               android:layout_width="wrap_content"  
+               android:layout_height="wrap_content"             
+               android:background="@drawable/radio"  
+               android:button="@null"  
+               android:checked="true"  
+               android:gravity="center"  
+               android:text="@string/Home_Crop"
+               android:textColor="#FFFFFF"
+               android:textStyle="bold"/>
+            <RadioButton
+               android:id="@+id/Home_Special"  
+               android:layout_width="wrap_content"  
+               android:layout_height="wrap_content"             
+               android:background="@drawable/radio"  
+               android:button="@null"  
+               android:checked="true"  
+               android:gravity="center"  
+               android:text="@string/Home_Special"
+               android:textColor="#FFFFFF"
+               android:textStyle="bold"/>
+            </RadioGroup>
+<!--  
+            <Button
+                android:id="@+id/Home_Protect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="@string/Home_protect"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Home_Cycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="@string/Home_cycle"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Home_Positive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="@string/Home_Positive"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Home_Repair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="@string/Home_Repair"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Home_Child"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="@string/Home_Child"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Home_Tooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="@string/Home_Tooth"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Home_Surgical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="@string/Home_Surgical"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Home_Crop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="@string/Home_Crop"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Home_Special"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbuttom"
+                android:text="@string/Home_Special"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+                -->
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
+</LinearLayout>

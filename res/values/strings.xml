@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">口腔微问答</string>
+    <string name="launcher">启动</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Home_List_Specialty">医疗专长:</string>
+    <string name= "Home_List_summary">个人简介:</string>
+	<string name="Home_protect">口腔预防科</string>
+	<string name="Home_cycle">牙周科</string>
+	<string name="Home_Positive">口腔正畸科</string>
+	<string name="Home_Repair">口腔修复科</string>
+	<string name="Home_Child">儿童口腔科</string>
+	<string name="Home_Tooth">牙体牙髓科</string>
+	<string name="Home_Surgical">口腔外科</string>
+	<string name="Home_Crop">种植中心</string>
+	<string name="Home_Special">特诊科</string>
+	<string name="Content_Field">擅长领域:</string>
+	<string name="Content_Summary">医生简介:</string>
+	<string name="Content_Weibo">收听腾讯微博</string>
+
+</resources>

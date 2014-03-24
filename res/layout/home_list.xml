@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="84dp"
+    android:background="@drawable/listbg">
+<ImageView 
+    android:id="@+id/Home_List_Image"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:layout_margin="10dp"
+    android:layout_alignParentLeft="true"
+    android:src="@drawable/one"
+    />
+<LinearLayout
+    android:id="@+id/Home_Content"
+    android:layout_width="fill_parent"
+    android:layout_height="64dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_toRightOf="@+id/Home_List_Image"
+    android:layout_toLeftOf="@+id/Home_Arrow"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/Home_List_Name"
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="1dp"
+        android:ellipsize="end"
+        android:text="yyssjhgj"
+        android:textSize="5pt"
+        android:textColor="@android:color/black"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="14dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:text="@string/Home_List_Specialty"
+            android:textSize="5pt"
+            android:textColor="#d71345"/>
+
+          <TextView
+              android:id="@+id/Home_List_Specialty"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_marginLeft="10dp"
+              android:textSize="5pt"
+              android:textColor="@android:color/black"
+              android:ellipsize="end" />
+
+    </LinearLayout>
+   <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="@string/Home_List_summary"
+            android:textSize="5pt"
+            android:textColor="#d71345"/>
+
+          <TextView
+              android:id="@+id/Home_List_summary"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:textSize="5pt"
+              android:textColor="@android:color/black"
+              android:text="yyssjhss222ssgj"/>
+
+    </LinearLayout>
+ 
+</LinearLayout>
+<LinearLayout 
+    android:id="@+id/Home_Arrow"
+  	android:layout_width="20dp"
+    android:layout_height="fill_parent"
+    android:layout_marginRight="10dp"
+    android:gravity="center"
+    android:layout_alignParentRight="true"  >
+    <ImageView 
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+ 	   android:src="@drawable/arrow"/>
+</LinearLayout>
+  
+</RelativeLayout>

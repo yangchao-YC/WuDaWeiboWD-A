@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/WeiBo_Top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/nav" >
+
+        <Button
+            android:id="@+id/WeiBo_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/back"
+            android:text="返回"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/WeiBo_Tab_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="医生介绍"
+            android:textColor="#FFFFFF"
+            android:textSize="22dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/WeiBo_buttom"
+        android:layout_below="@+id/WeiBo_Top" >
+
+        <ListView
+            android:id="@+id/WeiBo_ListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/weibolistbg"
+            android:cacheColorHint="#00000000" >
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/WeiBo_buttom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@drawable/buttombg" >
+
+        <EditText
+            android:id="@+id/WeiBo_EditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="3dp"
+            android:layout_margin="3dp"
+            android:maxLines="3"
+            android:layout_toLeftOf="@+id/WeiBo_button"
+            android:background="@drawable/eidt"
+            android:singleLine="false" />
+
+        <Button
+            android:id="@+id/WeiBo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/weibobutton"
+            android:text="我要咨询"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
